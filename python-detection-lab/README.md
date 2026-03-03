@@ -48,4 +48,3 @@ Real problem solving documented during the build — a syntax error caught and f
 
 ## Related Project
 This lab extends the [Azure AD Sign-In Log Analyzer](https://github.com/tdt1114/azure-ad-signin-analyzer)
-```
