@@ -1,0 +1,15 @@
+2024-03-15 08:01:12 | FAILURE | User: j.smith@company.com | IP: 185.220.101.45 | Attempt: 1
+2024-03-15 08:01:14 | FAILURE | User: j.smith@company.com | IP: 185.220.101.45 | Attempt: 2
+2024-03-15 08:01:16 | FAILURE | User: j.smith@company.com | IP: 185.220.101.45 | Attempt: 3
+2024-03-15 08:01:18 | FAILURE | User: j.smith@company.com | IP: 185.220.101.45 | Attempt: 4
+2024-03-15 08:01:20 | FAILURE | User: j.smith@company.com | IP: 185.220.101.45 | Attempt: 5
+2024-03-15 08:01:22 | SUCCESS | User: j.smith@company.com | IP: 185.220.101.45 | Attempt: 6
+2024-03-15 09:15:00 | SUCCESS | User: a.jones@company.com | IP: 10.0.0.5 | Attempt: 1
+2024-03-15 09:45:00 | FAILURE | User: admin@company.com   | IP: 203.0.113.99  | Attempt: 1
+2024-03-15 09:45:03 | FAILURE | User: admin@company.com   | IP: 203.0.113.99  | Attempt: 2
+2024-03-15 09:45:06 | FAILURE | User: admin@company.com   | IP: 203.0.113.99  | Attempt: 3
+2024-03-15 09:45:09 | FAILURE | User: admin@company.com   | IP: 203.0.113.99  | Attempt: 4
+2024-03-15 09:45:12 | FAILURE | User: admin@company.com   | IP: 203.0.113.99  | Attempt: 5
+2024-03-15 09:45:15 | FAILURE | User: admin@company.com   | IP: 203.0.113.99  | Attempt: 6
+2024-03-15 09:45:18 | FAILURE | User: admin@company.com   | IP: 203.0.113.99  | Attempt: 7
+2024-03-15 10:30:00 | SUCCESS | User: m.taylor@company.com | IP: 10.0.0.22    | Attempt: 1

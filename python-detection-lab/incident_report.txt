@@ -1,0 +1,22 @@
+============================================================
+ INCIDENT REPORT - BRUTE FORCE DETECTION
+============================================================
+Generated on: 2026-03-03 20:32:57
+Log Source  : python-detection-lab/sample_logs.txt
+Threshold   : 5+ failures
+Alerts Found: 2
+------------------------------------------------------------
+SUSPICIOUS ACCOUNTS:
+
+  Account  : j.smith@company.com
+  Source IP: 185.220.101.45
+  Failures : 5
+  Action   : Investigate account. Consider blocking 185.220.101.45.
+
+  Account  : admin@company.com
+  Source IP: 203.0.113.99
+  Failures : 7
+  Action   : Investigate account. Consider blocking 203.0.113.99.
+
+============================================================
+END OF REPORT
