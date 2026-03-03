@@ -8,39 +8,33 @@ A Python-based security tool that analyzes Azure Active Directory sign-in logs t
 - **Off-hours authentication** — logins occurring outside business hours (before 6AM or after 10PM)
 - **High priority correlation** — accounts flagged for BOTH failed logins AND off-hours activity, elevated for immediate triage
 
+## Detection Output
+![Analysis Output](screenshots/analysis-output.png)
+
 ## How It Works
 1. Authenticates to Microsoft Graph API using app registration and client credentials
 2. Pulls sign-in log data from Azure AD audit logs
 3. Parses each entry for error codes and timestamps
 4. Correlates findings and outputs a prioritized report
 
+## Detection Logic
+![VS Code Detection Logic](screenshots/vscode-detection-logic.png)
+
 ## API Authentication
 App registration was configured in Azure AD with the following Microsoft Graph permissions:
 - `AuditLog.Read.All`
 - `Directory.Read.All`
 
+![API Permissions](screenshots/api-permissions.png)
+
 Authentication was validated against a live Azure tenant. The API returned a `403 Authentication_RequestFromNonPremiumTenantOrB2CTenant` error, confirming that credentials and permissions were configured correctly but sign-in log access requires Azure AD Premium P1/P2 licensing.
+
+![403 Response](screenshots/403-response.png)
 
 Simulated log data was used to demonstrate detection logic and analysis output in the absence of a premium license.
 
-## Detection Output
-```
-========== SIGN-IN LOG ANALYSIS ==========
-
---- Failed Login Attempts ---
-  bwilliams@lab.local: 4 failed attempt(s) from 192.168.1.15 ⚠️  HIGH
-  rthomas@lab.local: 3 failed attempt(s) from 10.0.0.55 ⚠️  HIGH
-
---- Off-Hours Authentication ---
-  agreen@lab.local logged in at hour 2 from 192.168.1.22
-  agreen@lab.local logged in at hour 3 from 192.168.1.22
-  rthomas@lab.local logged in at hour 23 from 10.0.0.55
-
---- ⚠️  High Priority - Failed AND Off-Hours ---
-  🚨 rthomas@lab.local — multiple failed logins AND off-hours activity detected
-
-==========================================
-```
+## Azure App Registration
+![App Registration](screenshots/app-registration.png)
 
 ## Environment
 - Python 3.x
